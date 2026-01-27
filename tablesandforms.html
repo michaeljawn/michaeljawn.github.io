@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables & Forms</title>
+</head>
+<body>
+    <h1>Pizza Ordering Form</h1>
+
+    <form>
+
+        <section>
+            <h2>Contact Information</h2>
+
+            <label>
+                Name:
+                <input type="text" name="name" required>
+            </label>
+            <br>
+
+            <label>
+                Phone:
+                <input type="tel" name="phone" required>
+            </label>
+            <br>
+
+            <label>
+                Email:
+                <input type="email" name="email" required>
+            </label>
+        </section>
+
+        <section>
+            <h2>Select Pizza Size</h2>
+
+            <label>
+                Pizza Size:
+                <select name="size" required>
+                    <option value="">--Select Size--</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                    <option>XLarge</option>
+                </select>
+            </label>
+        </section>
+
+        <section>
+            <h2>Select Sauce</h2>
+
+            <label>
+                <input type="radio" name="sauce" value="marinara" required>
+                Marinara
+            </label>
+            <br>
+
+            <label>
+                <input type="radio" name="sauce" value="ranch">
+                Ranch
+            </label>
+            <br>
+
+            <label>
+                <input type="radio" name="sauce" value="none">
+                No Sauce
+            </label>
+        </section>
+
+        <section>
+            <h2>Select Toppings</h2>
+
+            <label><input type="checkbox"> Pepperoni</label>
+            <label><input type="checkbox"> Sausage</label>
+            <br>
+            <label><input type="checkbox"> Mushroom</label>
+            <label><input type="checkbox"> Pineapple</label>
+            <br>
+            <label><input type="checkbox"> Peppers</label>
+            <label><input type="checkbox"> Onions</label>
+        </section>
+
+        <section>
+            <h2>Additional Instructions</h2>
+
+            <textarea rows="4" cols="30">Add instructions</textarea>
+            <br><br>
+
+            <button type="submit">Submit</button>
+        </section>
+    </form>
+
+    <section>
+        <h2>List of My Favorite Games</h2>
+
+        <table border="1">
+            <thread>
+                <tr>
+                    <th>Developer</th>
+                    <th>Title</th>
+                    <th>Year</th>
+                </tr>
+            </thread>
+
+            <tbody>
+                <tr>
+                    <th>Team17</th>
+                    <td>Worms</td>
+                    <td>1995</td>
+                </tr>
+                <tr>
+                    <th>Rare</th>
+                    <td>GoldenEye 007</td>
+                    <td>1997</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">Infinity Ward</th>
+                    <td>Call of Duty 4: Modern Warfare</td>
+                    <td>2007</td>
+                </tr>
+                <tr>
+                    <td>Call of Duty: Modern Warfare 2</td>
+                    <td>2009</td>
+                </tr>
+                <tr>
+                    <th rowspan="3">Valve</th>
+                    <td>Counter-Strike</td>
+                    <td>2003</td>
+                </tr>
+                <tr>
+                    <td>Counter-Strike: Global Offensive</td>
+                    <td>2012</td>
+                </tr>
+                <tr>
+                    <td>Counter-Strike 2</td>
+                    <td>2023</td>
+                </tr>
+                <tr>
+                    <th>Respawn</th>
+                    <td>Apex Legends</td>
+                    <td>2019</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="3">Count: 8</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+    
+</body>
+</html>
