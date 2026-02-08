@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+#jumpMenu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100vh;
+    background: yellow;
+    padding: 20px;
+    text-align: center;
+}
+
+#jumpMenu h2{
+    margin-top: 0;
+}
+
+#jumpMenu a{
+    display: block;
+    margin: 10px;
+    color: blue;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 15%;
+    width: 85%;
+    background: lightblue;
+    color: black;
+    padding: 15px;
+    text-align: center;
+}
+
+header p{
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+header nav{
+    margin-top: 20px;
+}
+
+header button{
+    background: white;
+    color: black;
+    border: none;
+    padding: 15px 40px;
+    margin: 0 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+main{
+    margin-left: 15%;
+    padding-top: 160px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+main h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#container{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+article{
+    width: 300px;
+    line-height: 1.5;
+}
+
+article h2{
+    margin-top: 0;
+}
+
+article a{
+    color: blue;
+}
+
+#thanks{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: lightblue;
+    padding: 20px 30px;
+    font-size: 25px;
+    border: 1px solid black;
+}
+
+footer{
+    margin-top: 60px;
+    padding: 30px;
+    background: white;
+}
+
+
