@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+}
+
+main{
+    margin-left: 200px;
+}
+
+#menuItems{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: blue;
+    padding-top: 10px;
+}
+
+#menuItems button{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#menuItems button:hover{
+    background-color: orange;
+}
+
+#jumpMenu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+#recentArticles:hover + #jumpMenu,
+#jumpMenu:hover{
+    display: block;
+}
+
+#jumpMenu li a{
+    display: block;
+    padding: 8px;
+    background-color: orange;
+    color: blue;
+    text-align: center;
+}
+
+#jumpMenu li a:hover{
+    background-color: blue;
+    color: white;
+}
+
+header{
+    background-color: red; 
+    color: black; 
+    text-align: center; 
+    padding: 40px; 
+    font-size: 32px;
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+h1{
+    text-align: center;
+}
+
+article{
+    width: 22%;
+    color: lightgray;
+    transition: color 2s;
+}
+
+article p:first-of-type{
+    max-height: 180px;
+    overflow: hidden;
+    transition: max-height 2s;
+}
+
+article:hover p:first-of-type{
+    max-height: 1000px;
+}
+
+article:hover{
+    color: black;
+    max-height: 900px;
+}
+
+article p:first-of-type::first-letter{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 36px;
+}
+
+article a[href*="google"]{
+    color: blue;
+    position: relative;
+    padding-right: 22px;
+}
+
+article a[href*="google"]::after{
+    content: "";
+    background-image: url("images/arrow.png");
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-left: 6px;
+    vertical-align: middle;
+}
+
+#thanks{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: lightblue;
+    padding: 20px 30px;
+    font-size: 25px;
+    border: 1px solid black;
+}
+
+footer{
+    margin-top: 60px;
+    padding: 30px;
+    background: white;
+}
