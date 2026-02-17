@@ -77,6 +77,10 @@ section a{
     font-weight: bold;
 }
 
+section a:hover{
+    color: #0B0B45;
+}
+
 @media (min-width: 1024px){
 
     main{
