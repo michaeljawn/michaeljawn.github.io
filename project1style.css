@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+header{
+    text-align: center;
+    background-color: #1f2937;
+    color: white;
+    padding: 30px 20px;
+}
+
+header h1{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header a{
+    color: #93c5fd;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+main{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+section{
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2{
+    margin-bottom: 15px;
+    color: #1f2937;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 5px;
+}
+
+section img{
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    margin: 10px 10px 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+@media(min-width: 768px){
+    section img{
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+
+section p{
+    margin-top: 10px;
+}
+
+ul{
+    padding-left: 20px;
+}
+
+ul li{
+    margin-bottom: 8px;
+}
+
+/*@media(min-width: 1024px){
+    main{
+        display: grid;
+        grid-template-columns: 2fr 1.2fr;
+        gap: 20px;
+    }
+
+    header h1{
+        font-size: 44px;
+    }
+}*/
+
+.image-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.image-gallery img{
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.image-gallery img:hover{
+    transform: scale(1.03);
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tech-stack span {
+    background-color: #e5e7eb;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.project-hero {
+    text-align: center;
+    background: linear-gradient(135deg, #1f2937, #111827);
+    color: white;
+    padding: 60px 20px;
+}
+
+.project-hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 18px;
+    opacity: 0.85;
+    margin-bottom: 15px;
+}
+
+/* Make hero links match resume header links */
+.project-hero a {
+    color: #93c5fd;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-hero a:hover {
+    text-decoration: underline;
+}
