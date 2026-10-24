@@ -1,109 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michael John - Resume</title>
-    <link rel="stylesheet" href="resumestyle.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Michael John — AI/ML Engineer</title>
+<meta name="description" content="Portfolio of Michael John, AI/ML Engineer building ML pipelines and agentic systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Michael John</h1>
 
-        <p>
-            <a href="mailto:michaeljohncs@outlook.com">michaeljohncs@outlook.com</a> |
-            <a href="https://www.linkedin.com/in/michaeljohn99" target="_blank">LinkedIn</a> |
-            <a href="https://www.github.com/michaeljawn" target="_blank">GitHub</a>
-        </p>
-    </header>
-    
-    <main>
-        <section>
-            <h2>Professional Objective</h2>
-            <p>
-                Motivated and detail-oriented fourth-year Information Technology student with a strong foundation in programming, algorithms, and software development. 
-                Proficient in languages such as Python, SQL, Java, and C, with hands-on experience in problem-solving and debugging. 
-                Demonstrated ability to quickly learn new technologies and programming languages and adapt to evolving challenges. 
-                Seeking opportunities to apply technical skills in software development, problem-solving, and collaborative team environments.
-            </p>
-        </section>
+<header class="hero">
+  <div class="terminal">
+    <div class="terminal-bar">
+      <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+      <span class="terminal-title">michael@portfolio — zsh</span>
+    </div>
+    <div class="terminal-body">
+      <p><span class="prompt">$</span> whoami</p>
+      <p class="out name">Michael John</p>
 
-        <section>
-            <h2>Education</h2>
+      <p><span class="prompt">$</span> status</p>
+      <p class="out">Engineering AI systems at TEKsystems Global Services<span class="cursor" aria-hidden="true"></span></p>
 
-            <p>
-                <strong>University of Central Florida</strong><br>
-                Bachelor of Science, Information Technology<br>
-                August 2026
-            </p>
+      <p><span class="prompt">$</span> connect --list</p>
+      <p class="out links">
+        <a href="mailto:michaeljohncs@outlook.com">email</a>
+        <a href="https://www.linkedin.com/in/michaeljohn99" target="_blank" rel="noopener">linkedin</a>
+        <a href="https://github.com/michaeljawn" target="_blank" rel="noopener">github</a>
+      </p>
+    </div>
+  </div>
+</header>
 
-            <br>
+<nav class="quicknav" aria-label="Section navigation">
+  <a href="#summary">summary</a>
+  <a href="#experience">experience</a>
+  <a href="#projects">projects</a>
+  <a href="#skills">skills</a>
+  <a href="#education">education</a>
+</nav>
 
-            <p>
-                <strong>Valencia College</strong><br>
-                Associate's Degree, Computer Science<br>
-                December 2023
-            </p>
-        </section>
+<main>
 
-        <section>
-            <h2>Professional Experience</h2>
+  <section id="summary" aria-labelledby="summary-h">
+    <p class="eyebrow">$ summary</p>
+    <h2 id="summary-h">About</h2>
+    <p class="lede">
+      I'm an AI/ML Engineer who enjoys building practical solutions to real-world problems with data and AI. 
+      In my current role at TEKsystems Global Services, I work on everything from agentic workflows and systems to AI cost optimization. 
+      I enjoy working at the point where technology meets business, using AI and data to build solutions that are both technically sound and genuinely useful. 
+      <br><br>
+      Outside of the technical side of things, I'm always looking for opportunities to learn and grow. 
+      I'm interested in where AI is headed and how it will continue to change the way businesses work, 
+      and I'm excited to be part of that future.
+    </p>
+  </section>
 
-            <article>
-                <h3>AI/ML Engineer I</h3>
+  <section id="experience" aria-labelledby="experience-h">
+    <p class="eyebrow">$ experience</p>
+    <h2 id="experience-h">Experience</h2>
 
-                <p>
-                    TEKsystems Global Services - Remote<br>
-                    June 2026 - Present
-                </p>
-            <article>
+    <div class="job">
+      <div class="job-head">
+        <div>
+          <div class="job-title">AI/ML Engineer I</div>
+          <div class="job-org">TEKsystems Global Services &middot; Remote</div>
+        </div>
+        <div class="job-dates">June 2026 &ndash; Present</div>
+      </div>
+      <ul>
+        <li>Leverage Claude and other AI coding tools to accelerate prototyping and development of AI-powered features and agentic workflows.</li>
+        <li>Build and maintain AI FinOps and Tokenomics solutions that track, forecast, and optimize LLM usage costs and token consumption for internal teams and client-facing products.</li>
+        <li>Design and optimize end-to-end machine learning pipelines, including data preprocessing, model integration, fine-tuning, evaluation, and deployment.</li>
+        <li>Build and maintain scalable RAG systems, APIs, data pipelines, and model-serving infrastructure in Python.</li>
+        <li>Partner with cross-functional teams, including finance and client stakeholders, to translate cost-governance and usage-optimization requirements into production-ready AI/ML solutions.</li>
+        <li>Run experiments, analyze results, and debug issues to continuously improve model performance, system efficiency, and cost-effectiveness.</li>
+      </ul>
+    </div>
 
-            <article>
-                <h3>Support Engineer (Internship)</h3>
+    <div class="job">
+      <div class="job-head">
+        <div>
+          <div class="job-title">Support Engineer Intern</div>
+          <div class="job-org">Leading the Pride Consulting &middot; Orlando, FL</div>
+        </div>
+        <div class="job-dates">May 2025 &ndash; June 2025</div>
+      </div>
+      <ul>
+        <li>Provided on-site and remote IT support for a diverse client base, including medical offices, law firms, and other professional environments.</li>
+        <li>Diagnosed and resolved software and hardware issues across desktops, laptops, network devices, and peripherals.</li>
+        <li>Configured and deployed new workstations; joined devices to Active Directory domains and ensured compliance with organizational policies.</li>
+        <li>Maintained and troubleshot Windows Server environments, including user account management, file sharing, and network configurations.</li>
+        <li>Communicated technical solutions clearly and effectively to non-technical users, fostering strong client relationships.</li>
+      </ul>
+    </div>
+  </section>
 
-                <p>
-                    Leading the Pride Consulting - Orlando, FL<br>
-                    May 2025 - June 2025
-                </p>
+  <section id="projects" aria-labelledby="projects-h">
+    <p class="eyebrow">$ projects</p>
+    <h2 id="projects-h">Projects</h2>
 
-                <ul>
-                    <li>Provided on-site and remote IT support for a diverse client base, including medical offices, law firms, and other professional environments.</li>
-                    <li>Diagnosed and resolved software and hardware issues across desktops, laptops, network devices, and peripherals.</li>
-                    <li>Configured and deployed new workstations; joined devices to Active Directory domains and ensured compliance with organizational policies.</li>
-                    <li>Maintained and troubleshot Windows Server environments, including user account management, file sharing, and network configurations.</li>
-                    <li>Assisted in server and network infrastructure upgrades, ensuring minimal downtime and optimal performance.</li>
-                    <li>Communicated technical solutions clearly and effectively to non-technical users, fostering strong client relationships.</li>
-                </ul>
-            </article>
-        </section>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3><a href="project3.html">Fantasy Football Analytics Database</a></h3>
+        <p>A normalized relational database analyzing fantasy football performance from real-world player statistics, with advanced SQL views for weekly rankings, leaderboards, and consistency metrics.</p>
+        <div class="tags">
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Git</span>
+        </div>
+      </div>
 
-        <section>
-            <h2>Projects</h2>
+      <div class="project-card">
+        <h3><a href="project2.html">NFL Player Statistics &amp; Award Predictions</a></h3>
+        <span class="status-badge">in development</span>
+        <p>An interactive NFL stat tracker and machine learning project that predicts season awards like MVP, OPOY, and DPOY from weekly player data.</p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">scikit-learn</span>
+          <span class="tag">Jupyter</span>
+        </div>
+      </div>
 
-            <ul>
-                <li><a href="project1.html">Connect 4 Mobile Game</a></li>
-                <li><a href="project3.html">Fantasy Football Analytics Database</a></li>
-                <li><a href="project2.html">NFL Player Statistics & Predictions</a></li>
-            </ul>
-        </section>
+      <div class="project-card">
+        <h3><a href="project1.html">Connect 4 Mobile Game</a></h3>
+        <p>A fully functional Android Connect Four game with three AI difficulty levels, built with a clean, object-oriented game-logic architecture.</p>
+        <div class="tags">
+          <span class="tag">Java</span>
+          <span class="tag">XML</span>
+          <span class="tag">Android Studio</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <section>
-            <h2>Technical Skills</h2>
+  <section id="skills" aria-labelledby="skills-h">
+    <p class="eyebrow">$ skills</p>
+    <h2 id="skills-h">Skills</h2>
 
-            <p>
-                <strong>Certifications</strong><br>
-                CompTIA ITF+<br>
-                <br>
+    <div class="skill-group">
+      <h3>Certifications</h3>
+      <div class="pill-row"><span class="pill">CompTIA ITF+</span></div>
+    </div>
 
-                <strong>Languages & Tools</strong><br>
-                Python, SQL, Java, C, HTML, CSS, JavaScript, XML, Linux, Git/GitHub, Jupyter, NumPy, scikit-learn, SciPy, pandas, matplotlib, Microsoft Visual Studio Code, Microsoft Office Suite, Android Studio, Codespaces, Ubuntu, Eclipse, Networking Protocols (TCP/IP, DHCP, DNS)<br>
-                <br>
+    <div class="skill-group">
+      <h3>Languages &amp; Tools</h3>
+      <div class="pill-row">
+        <span class="pill">Python</span>
+        <span class="pill">SQL</span>
+        <span class="pill">Java</span>
+        <span class="pill">C</span>
+        <span class="pill">JavaScript</span>
+        <span class="pill">TensorFlow</span>
+        <span class="pill">PyTorch</span>
+        <span class="pill">scikit-learn</span>
+        <span class="pill">NumPy</span>
+        <span class="pill">pandas</span>
+        <span class="pill">SciPy</span>
+        <span class="pill">matplotlib</span>
+        <span class="pill">Jupyter</span>
+        <span class="pill">Git/GitHub</span>
+        <span class="pill">Docker</span>
+        <span class="pill">VS Code</span>
+        <span class="pill">Android Studio</span>
+        <span class="pill">Windows</span>
+        <span class="pill">macOS</span>
+        <span class="pill">Linux</span>
+        
+      </div>
+    </div>
 
-                <strong>Relevant Coursework</strong><br>
-                Advanced Data Structures & Algorithms, Object Oriented Programming, Algorithms for ML, Computer Logic and Design, Security in Computing, Systems Software, Database Concepts, Network Concepts
-            </p>
-        </section>
+    <div class="skill-group">
+      <h3>Relevant Coursework</h3>
+      <div class="pill-row">
+        <span class="pill">Advanced Data Structures &amp; Algorithms</span>
+        <span class="pill">Algorithms for ML</span>
+        <span class="pill">Database Concepts</span>
+        <span class="pill">Object-Oriented Programming</span>
+        <span class="pill">Statistical Methods</span>
+        <span class="pill">Security in Computing</span>
+        <span class="pill">Systems Software</span>
+        <span class="pill">Network Concepts</span>
+      </div>
+    </div>
+  </section>
 
-    </main>
+  <section id="education" aria-labelledby="education-h">
+    <p class="eyebrow">$ education</p>
+    <h2 id="education-h">Education</h2>
+
+    <div class="edu-entry">
+      <h3>University of Central Florida</h3>
+      <div class="job-org">Bachelor of Science, Information Technology</div>
+      <div class="job-dates">Orlando, FL &middot; August 2026</div>
+    </div>
+
+    <div class="edu-entry">
+      <h3>Valencia College</h3>
+      <div class="job-org">Associate's Degree, Computer Science</div>
+      <div class="job-dates">Orlando, FL &middot; December 2023</div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>$ exit &mdash; Michael John &middot; <a href="#summary">back to top</a></p>
+</footer>
+
 </body>
 </html>
